@@ -32,7 +32,6 @@ p {
     float: left;
 }
 .struttura .col {
-    height: 100px;
     width: 90%;
     background-color: rgba(0, 0, 0, 0.95);
     margin-bottom: 50px;
@@ -51,9 +50,18 @@ p {
 .col .description {
     float: left;
     margin: 10px 0px 10px 10px;
-    color: white
+    color: red;
 }
 .description a {
     color: rgb(125, 162, 231);
     text-decoration: none;
+}
+.col.clearfix::after {
+    content:'';
+    clear: both;
+    display: table;
+}
+.struttura:nth-last-child(3) {
+    clear: both;
+    display: table;
 }
