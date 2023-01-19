@@ -19,29 +19,41 @@ h1 {
     margin: 20px 0;
 }
 p {
-    margin: 20px 0;
+    margin: 50px 0;
 }
 /* MAIN */
+/* struttura*/
 .container {
     margin: auto;
     max-width: 1170px;
-    border: 1px solid red;
-    height: 500px;
 }
 .struttura {
     width: calc(100% / 3);
-    border: 1px solid green;
-    height: 150px;
     float: left;
 }
 .struttura .col {
-    border: 1px solid blue;
     height: 100px;
     width: 90%;
+    background-color: rgba(0, 0, 0, 0.95);
+    margin-bottom: 50px;
 }
 .struttura .col.due {
     margin: auto;
 }
 .struttura .col.tre {
     float: right;
+}
+/* contenuto delle caselle */
+.col img {
+    height: 100px;
+    float: left;
+}
+.col .description {
+    float: left;
+    margin: 10px 0px 10px 10px;
+    color: white
+}
+.description a {
+    color: rgb(125, 162, 231);
+    text-decoration: none;
 }
