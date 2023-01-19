@@ -5,3 +5,43 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* HEADER */
+body {
+    font-family: 'Fredoka', sans-serif;
+}
+header {
+    text-align: center;
+    margin: auto;
+    max-width: 1170px;
+}
+h1 {
+    color: deeppink;
+    margin: 20px 0;
+}
+p {
+    margin: 20px 0;
+}
+/* MAIN */
+.container {
+    margin: auto;
+    max-width: 1170px;
+    border: 1px solid red;
+    height: 500px;
+}
+.struttura {
+    width: calc(100% / 3);
+    border: 1px solid green;
+    height: 150px;
+    float: left;
+}
+.struttura .col {
+    border: 1px solid blue;
+    height: 100px;
+    width: 90%;
+}
+.struttura .col.due {
+    margin: auto;
+}
+.struttura .col.tre {
+    float: right;
+}
