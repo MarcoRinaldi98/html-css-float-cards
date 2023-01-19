@@ -50,7 +50,7 @@ p {
 .col .description {
     float: left;
     margin: 10px 0px 10px 10px;
-    color: red;
+    color: white;
 }
 .description a {
     color: rgb(125, 162, 231);
