@@ -5,63 +5,69 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* HEADER */
+
+/* Regole CSS */
 body {
     font-family: 'Fredoka', sans-serif;
 }
+/* HEADER */
 header {
     text-align: center;
     margin: auto;
     max-width: 1170px;
 }
 h1 {
+    font-size: 40px;
     color: deeppink;
     margin: 20px 0;
 }
 p {
+    font-weight: 400;
     margin: 50px 0;
 }
 /* MAIN */
-/* struttura*/
-.container {
-    margin: auto;
+.columns {
     max-width: 1170px;
+    margin: auto;
 }
-.struttura {
+.col {
     width: calc(100% / 3);
     float: left;
-}
-.struttura .col {
-    width: 90%;
-    background-color: rgba(0, 0, 0, 0.95);
-    margin-bottom: 50px;
-}
-.struttura .col.due {
-    margin: auto;
-}
-.struttura .col.tre {
-    float: right;
+    padding: 20px;
 }
 /* contenuto delle caselle */
-.col img {
+.card {
+    background-color: black;
+    height: 100px;
+    box-shadow: 0px 0px 10px 0px black;
+}
+.card img {
     height: 100px;
     float: left;
 }
-.col .description {
-    float: left;
-    margin: 10px 0px 10px 10px;
+.info {
+    float: right;
+    width: calc(100% - 100px);
+    padding-left: 20px;
+}
+.info h3, h5 {
     color: white;
 }
-.description a {
+.info h3 {
+    margin: 15px 0px 5px;
+    text-transform: uppercase;
+}
+.info a {
     color: rgb(125, 162, 231);
     text-decoration: none;
 }
-.col.clearfix::after {
-    content:'';
-    clear: both;
-    display: table;
+.info h5 {
+    margin-bottom: 5px;
+    font-weight: 400;
 }
-.struttura:nth-last-child(3) {
-    clear: both;
+/* Clearfix */
+.clearfix::after {
+    content:'';
     display: table;
+    clear: both;
 }
